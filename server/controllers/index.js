@@ -1,7 +1,7 @@
 const auth = require('./auth');
-const books = require('./books');
+const watches = require('./watches');
 
 module.exports = {
     auth,
-    books
+    watches
 };

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.card-img-top {
+  width: 45%;
+}
+
+.w-7em {
+  width: 7em;
+}
+
+.product-image {
+  width: 2em;
+  height: 2em;
+}
+
+@media (min-width: 576px) {
+  .card-deck {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.img-cart{
+  width: 137px;
+  height: 170px;
+}
+.font-2em{
+  font-size: 2em;
+}

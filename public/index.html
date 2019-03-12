@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watch Shop</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="h3">
+        <a class="navbar-brand h2" href="#">Watch Store</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link mx-5" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="#">My Orders</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Administration
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Add Watch</a>
+                    <a class="dropdown-item" href="#">Pending Orders</a>
+                    <a class="dropdown-item" href="#">Archived Orders</a>
+                    <a class="dropdown-item" href="#">Get All Users</a>
+                </div>
+            </li>
+            <li class="nav-item ml-5">
+                <a href="#" class="nav-link"><i class="fas fa-heart font-2em"></i></a>
+            </li>
+            <p class="font-2em">/</p>
+            <li class="nav-item ml-1">
+                <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down font-2em"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="jumbotron w-75 mx-auto mt-3">
+        <h1 class="display-4 text-center mb-3">Welcome to our watch shop!</h1>
+        <p class="my-3 text-center">Here you can find the most unique watches with best prices!</p>
+        <p class="lead row justify-content-center">
+            <a class="btn btn-outline-info btn-lg w-7em" href="#" role="button">Register</a>
+            <a class="btn btn-outline-info btn-lg ml-2 w-7em" href="#" role="button">Shop</a>
+        </p>
+    </div>
+    <div class="row text-center mx-auto">
+        <h3 class="my-3 text-center col-lg-12">Top 3 Most Liked Watches</h3>
+        <div class="card-deck justify-content-center">
+            <div class="card col-lg-3 text-center">
+                <img class="card-img-top card-image mx-auto mt-2"
+                     src="https://images.rolex.com/catalogue/images/upright-bba-with-shadow/m116503-0004.png?impolicy=upright-majesty">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Daytona</h5>
+                </div>
+                <div class="card-footer text-center">
+                    <p class="text-muted">200.00 ЛВ</p>
+                    <div class="row">
+                        <button type="button" class="btn btn-outline-info w-7em float-right btn-sm mx-auto p-2">View</button>
+                        <button type="button" class="btn btn-outline-success w-7em float-right btn-sm mx-auto p-2">Add To Cart</button>
+                    </div>
+                    <div class="row mt-2">
+                        <button type="button" class="btn btn-outline-danger w-7em float-right btn-sm mx-auto p-2"><i class="fas fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-outline-warning w-7em float-right btn-sm mx-auto p-2"><i class="far fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-3 text-center">
+                <img class="card-img-top card-image mx-auto mt-2"
+                     src="http://est1905.de/wp-content/uploads/2017/05/Submariner_Date_116618LN.jpg">
+                    <div class="card-body">
+                    <h5 class="card-title">Rolex Submariner</h5>
+                </div>
+                <div class="card-footer text-center">
+                    <p class="text-muted">200.00 ЛВ</p>
+                    <div class="row">
+                        <button type="button" class="btn btn-outline-info w-7em float-right btn-sm mx-auto p-2">View</button>
+                        <button type="button" class="btn btn-outline-success w-7em float-right btn-sm mx-auto p-2">Add To Cart</button>
+                    </div>
+                    <div class="row mt-2">
+                        <button type="button" class="btn btn-outline-danger w-7em float-right btn-sm mx-auto p-2"><i class="fas fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-outline-warning w-7em float-right btn-sm mx-auto p-2"><i class="far fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-3 text-center">
+                <img class="card-img-top card-image mx-auto mt-2"
+                     src="https://www.hublot.com/magento/media/catalog/product/cache/1/small_image/x1000/9df78eab33525d08d6e5fb8d27136e95/b/b/bb_sangbleu_black_new.png"
+                     alt="Harry Potter">
+                <div class="card-body">
+                    <h5 class="card-title">Hublot Sang Bleu</h5>
+
+                </div>
+                <div class="card-footer text-center">
+                    <p class="text-muted">200.00 ЛВ</p>
+                    <div class="row">
+                        <button type="button" class="btn btn-outline-info w-7em float-right btn-sm mx-auto p-2">View</button>
+                        <button type="button" class="btn btn-outline-success w-7em float-right btn-sm mx-auto p-2">Add To Cart</button>
+                    </div>
+                    <div class="row mt-2">
+                        <button type="button" class="btn btn-outline-danger w-7em float-right btn-sm mx-auto p-2"><i class="fas fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-outline-warning w-7em float-right btn-sm mx-auto p-2"><i class="far fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-secondary mt-2">
+    <p class="p-2 text-center">Copyright &copy; Svetloslav Novoselski 2019</p>
+</footer>
+</body>
+</html>

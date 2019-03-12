@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('../models/User');
-const Book = require('../models/Book');
+const Watch = require('../models/Watch');
 const Order = require('../models/Order');
-const PromoCode = require('../models/PromoCode');
 
 mongoose.Promise = global.Promise;
 

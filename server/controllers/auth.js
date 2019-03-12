@@ -3,10 +3,11 @@ const User = require('mongoose').model('User');
 const encryption = require('../util/encryption');
 
 function validateUser(req, res) {
-    const {email, password, firstName, lastName} = req.body;
-    if (email.trim() == "" || password.trim() == "" || firstName.trim() == "" || lastName.trim() == "") {
+    const {username, password} = req.body;
+    if (username.trim() == "" || password.trim() == "") {
         res.status(422).json({
             message: 'Validation failed, entered data is incorrect',
+            success: false
         });
 
         return false;
@@ -16,22 +17,38 @@ function validateUser(req, res) {
 }
 
 module.exports = {
-    signUp: (req, res) => {
+    signUp: async (req, res) => {
         if (validateUser(req, res)) {
-            const {email, password, firstName, lastName} = req.body;
+            const {username, password, repeatPassword} = req.body;
+            if (username.trim() === "" || password.trim() === "" ||
+                repeatPassword.trim() !== password){
+                res.status(422).json({
+                    data: req.body,
+                    message: "Invalid credentials!",
+                    success: false
+                });
+                return;
+            }
             const salt = encryption.generateSalt();
             const hashedPassword = encryption.generateHashedPassword(salt, password);
+            let users = await User.find({username: username});
+            if (users.length > 0){
+                res.status(422).json({
+                    data: req.body,
+                    message: "Username already exists",
+                    success: false
+                });
+                return;
+            }
             User.create({
-                email,
+                username,
                 hashedPassword,
-                firstName,
-                lastName,
                 salt,
                 orders: [],
                 roles: ['User']
             }).then((user) => {
                 const token = jwt.sign({
-                    email: user.email,
+                    username: user.username,
                     userId: user._id.toString()
                 }, 'somesupersecret', {expiresIn: '4h'});
 
@@ -39,7 +56,10 @@ module.exports = {
                     {
                         message: 'User registered successfully!',
                         token,
-                        userId: user._id.toString()
+                        userId: user._id.toString(),
+                        username: user.username,
+                        success: true,
+                        roles: user.roles,
                     });
             }).catch((error) => {
                     if (!error.statusCode) {
@@ -51,24 +71,37 @@ module.exports = {
         }
     },
     signIn: (req, res) => {
-        const {email, password} = req.body;
-
-        User.findOne({email: email})
+        const {username, password} = req.body;
+        if (username.trim() === "" || password.trim() === ""){
+            res.status(422).json({
+                data: req.body,
+                message: "Invalid credentials!",
+                success: false
+            });
+            return;
+        }
+        User.findOne({username: username})
             .then((user) => {
                 if (!user) {
-                    const error = new Error('A user with this email could not be found');
-                    error.statusCode = 401;
-                    throw error;
+                    res.status(401).json({
+                        data: req.body,
+                        message: "A user with this username could not be found",
+                        success: false
+                    });
+                    return;
                 }
 
                 if (!user.authenticate(password)) {
-                    const error = new Error('A user with this email could not be found');
-                    error.statusCode = 401;
-                    throw error;
+                    res.status(401).json({
+                        data: req.body,
+                        message: "A user with this password could not be found",
+                        success: false
+                    });
+                    return;
                 }
 
                 const token = jwt.sign({
-                    email: user.email,
+                    username: user.username,
                     userId: user._id.toString()
                 }, 'somesupersecret', {expiresIn: '4h'});
 
@@ -76,7 +109,11 @@ module.exports = {
                     {
                         message: 'User successfully logged in!',
                         token,
-                        userId: user._id.toString()
+                        userId: user._id.toString(),
+                        username: user.username,
+                        success: true,
+                        roles: user.roles,
+
                     });
             })
             .catch(error => {
@@ -91,7 +128,8 @@ module.exports = {
         res.setHeader("Authorization", "");
         res.status(200)
             .json({
-                message: 'Logout successfully!'
+                message: 'Logout successfully!',
+                success: true
             });
     }
 };

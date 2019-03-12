@@ -1,6 +1,6 @@
 module.exports = {
     development: {
-        db: 'mongodb://localhost:27017/books-store',
+        db: 'mongodb://localhost:27017/watch-store',
         port: 5000
     },
     production: {

@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-    books: [{
+    watches: [{
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        ref: 'Book'
+        ref: 'Watch'
     }],
     userId: {
         type: mongoose.Schema.Types.ObjectId,

@@ -1,7 +1,7 @@
 const authRoutes = require('../routes/auth');
-const booksRoutes = require('../routes/books');
+const watchesRoutes = require('../routes/watches');
 
 module.exports = (app) => {
     app.use('/auth', authRoutes);
-    app.use('/books', booksRoutes);
+    app.use('/watches', watchesRoutes);
 };
