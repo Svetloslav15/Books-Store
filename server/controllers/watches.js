@@ -6,9 +6,10 @@ module.exports = {
     createWatch: (req, res) => {
         let {description, name, imageUrl, price} = req.body;
         if (description.trim() == "" || name.trim() == "" ||
-            imageUrl.trim() == "" || +(price.trim() <= 0)) {
+            imageUrl.trim() == "" || +price <= 0) {
             res.status(422).json({
-                message: 'Validation failed, entered data is incorrect',
+                message: 'Validation failed, entered data is incorrect!',
+                success: false
             });
             return;
         }
@@ -16,12 +17,14 @@ module.exports = {
             description, imageUrl, price: Number(price), name
         }).then((x) => {
             res.status(200).json({
-                message: 'Watch created successfully!',
-                data: x
+                message: 'Watch was created successfully!',
+                data: x,
+                success: true
             });
         }).catch((err) => {
             res.status(422).json({
                 message: err,
+                success: false
             });
         });
     },
@@ -41,28 +44,33 @@ module.exports = {
     editWatch: (req, res) => {
         let {id, description, name, imageUrl, price} = req.body;
         if (description.trim() == "" || imageUrl.trim() == "" ||
-            name.trim() == "" || +(price.trim() <= 0)) {
+            name.trim() == "" || +price <= 0) {
             res.status(422).json({
                 message: 'Validation failed, entered data is incorrect',
+                success: false
             });
             return;
         }
         Watch.findByIdAndUpdate(id, {
-            name, description, imageUrl, price: Number(price)
-        })
-            .then((x) => {
+            $set: {
+                name, description, imageUrl, price: Number(price)
+            }
+        }).then((x) => {
+            x.save();
                 res.status(200).json({
                     message: 'Watch edited successfully!',
-                    data: x
+                    data: x,
+                    success: true
                 });
             }).catch((err) => {
             res.status(422).json({
                 message: err,
+                success: false
             });
         });
     },
     deleteWatch: (req, res) => {
-        let id = req.body;
+        let id = req.body.id;
         Watch.findByIdAndRemove(id)
             .then(watch => {
                 res.status(200).json({
@@ -159,6 +167,23 @@ module.exports = {
                 message: err
             });
         }
+    },
+    getBestThree: (req, res) => {
+        Watch.find({}).sort('-date')
+            .then((watches) => {
+                let result = [];
+                for (let i = 1; i <= 3; i++) {
+                    result.push(watches[i]);
+                }
+                res.status(200).json({
+                    data: result,
+                    message: 'Successfully fetched all watches!'
+                })
+            }).catch(err => {
+            res.status(422).json({
+                message: err,
+            });
+        })
     },
 
     getSearch: (req, res) => {

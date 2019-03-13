@@ -16,6 +16,10 @@ const watchSchema = new mongoose.Schema({
     price: {
         type:mongoose.Schema.Types.Number,
         required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now()
     }
 });
 

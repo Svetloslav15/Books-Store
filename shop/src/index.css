@@ -31,3 +31,6 @@
 .font-2em{
   font-size: 2em;
 }
+.cart-btn{
+  display: flex; flex-direction: row
+}

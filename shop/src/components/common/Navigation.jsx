@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from "react";
 import {Link} from "react-router-dom";
+import {isAdmin} from '../../hocs/privateRoutes';
 
 export default class Navigation extends Component {
     render() {
@@ -28,24 +29,26 @@ export default class Navigation extends Component {
                                         <li className="nav-item mx-5">
                                             <Link className="nav-link" to="/orders/mine">My Orders</Link>
                                         </li>
-                                        <li className="nav-item dropdown">
-                                            <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown"
-                                                  role="button"
-                                                  data-toggle="dropdown"
-                                                  aria-haspopup="true" aria-expanded="false">
-                                                Administration
-                                            </Link>
-                                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <Link className="dropdown-item" to="/administration/watch/add">Add
-                                                    Watch</Link>
-                                                <Link className="dropdown-item" to="/administration/orders/pending">Pending
-                                                    Orders</Link>
-                                                <Link className="dropdown-item" to="/administration/orders/archived">Archived
-                                                    Orders</Link>
-                                                <Link className="dropdown-item" to="/administration/users/all">Get All
-                                                    Users</Link>
-                                            </div>
-                                        </li>
+                                        {
+                                            isAdmin() == true ? (<li className="nav-item dropdown">
+                                                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown"
+                                                      role="button"
+                                                      data-toggle="dropdown"
+                                                      aria-haspopup="true" aria-expanded="false">
+                                                    Administration
+                                                </Link>
+                                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <Link className="dropdown-item" to="/administration/watch/add">Add
+                                                        Watch</Link>
+                                                    <Link className="dropdown-item" to="/administration/orders/pending">Pending
+                                                        Orders</Link>
+                                                    <Link className="dropdown-item" to="/administration/orders/archived">Archived
+                                                        Orders</Link>
+                                                    <Link className="dropdown-item" to="/administration/users/all">Get All
+                                                        Users</Link>
+                                                </div>
+                                            </li>) : ""
+                                        }
                                         <div className="row justify-content-center">
                                             <li className="nav-item ml-5">
                                                 <Link to="/favourites" className="nav-link"><i

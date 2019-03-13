@@ -3,46 +3,46 @@ import {Redirect, Route} from 'react-router-dom'
 import {toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
+function protectedRoute(allowedRoles, inRole) {
+    return function (WrappedComponent) {
+        return function ({role, ...rest}) {
+            if (inRole()) {
+                return <WrappedComponent {...rest} />;
+            }
+            toast.warn('You can\'t access this route!', {
+                position: toast.POSITION.TOP_RIGHT,
+                autoClose: 5000
+            });
+            return <Redirect to="/"/>
+        };
 
+    };
 
-function isAdmin(Component) {
+}
+
+function isAdmin() {
     let roles = localStorage.getItem('roles');
-    if (!roles){
-        toast.warn('You need to be an Admin to access this route!', {
-            position: toast.POSITION.TOP_RIGHT,
-            autoClose: 5000
-        });
-        return <Redirect to="/" />
+    if (!roles) {
+        return false;
     }
-    if (roles.includes('Admin')){
-        return <Component/>
-    }
-    toast.warn('You must be an Admin to access this route!', {
-        position: toast.POSITION.TOP_RIGHT,
-        autoClose: 5000
-    });
-    return <Redirect to="/" />
+    return roles.includes('Admin');
+
 }
+
 function isAuthed(Component) {
-    if (localStorage.getItem('token')){
-        return <Component/>;
-    }
-    toast.warn('You must be authenticated to access this route!', {
-        position: toast.POSITION.TOP_RIGHT,
-        autoClose: 5000
-    });
-    return <Redirect to="/login"/>
+    return localStorage.getItem('token');
+    //return <Redirect to="/login"/>
 }
+
 function isNotAuthed(Component) {
-    if (!localStorage.getItem('token')){
-        return <Component/>;
-    }
-    toast.warn('You must be not authenticated to access this route!', {
-        position: toast.POSITION.TOP_RIGHT,
-        autoClose: 5000
-    });
-    return <Redirect to="/"/>
+    return !localStorage.getItem('token');
+    //toast.warn('You must be not authenticated to access this route!', {
+    //    position: toast.POSITION.TOP_RIGHT,
+    //    autoClose: 5000
+    //});
+    //return <Redirect to="/"/>
 }
-export default {
-    isAdmin, isAuthed, isNotAuthed
+
+export {
+    isAuthed, isNotAuthed, protectedRoute, isAdmin
 }

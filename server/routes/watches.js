@@ -6,6 +6,7 @@ router.post('/create', controllers.watches.createWatch);
 router.post('/edit/:id', controllers.watches.editWatch);
 router.post('/delete/:id', controllers.watches.deleteWatch);
 router.get('/get/all', controllers.watches.getAll);
+router.get('/get/best/3', controllers.watches.getBestThree);
 router.get('/get/:id', controllers.watches.getWatchById);
 router.post('/cart/add/:id', controllers.watches.addWatchToCart);
 router.post('/cart/remove/:id', controllers.watches.removeFromCart);
