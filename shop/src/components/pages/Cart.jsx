@@ -14,18 +14,22 @@ export default class Cart extends Component {
             allPrice: 0
         }
     }
+
     componentDidMount = () => {
         let cart = JSON.parse(localStorage.getItem('cart'));
         let allPrice = 0;
-        cart.forEach(x => {
-            allPrice += Number(x.price)
-        });
+        if (cart != null) {
+            cart.forEach(x => {
+                allPrice += Number(x.price)
+            });
+        }
+
         this.setState({allPrice});
     }
     render = () => {
         let watches = [];
         let cart = JSON.parse(localStorage.getItem('cart'));
-        if (cart == null || cart.length == 0){
+        if (cart == null || cart.length == 0) {
             return <h3 className="mt-3 text-center">No watches into cart yet!</h3>
         }
         cart.forEach(el => {
