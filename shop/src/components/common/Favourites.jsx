@@ -1,5 +1,4 @@
-import React, {Component, Fragment} from 'react';
-import {Link, Redirect} from "react-router-dom";
+import React, {Component} from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import FavouriteWatch from "../common/FavouriteWatch";
 
@@ -15,12 +14,12 @@ export default class Favourites extends Component {
     render = () => {
         let watches = [];
         let favourite = JSON.parse(localStorage.getItem('favourite'));
-        if (favourite == null || favourite.length == 0){
+        if (favourite === null || favourite.length === 0){
             return <h3 className="mt-3 text-center">No favourite watches yet!</h3>
         }
         favourite.forEach(el => {
             watches.push(<FavouriteWatch
-                id={el.id}
+                id={el._id}
                 description={el.description}
                 name={el.name}
                 price={el.price}

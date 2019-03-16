@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const watchSchema = new mongoose.Schema({
     name: {
         type: mongoose.Schema.Types.String,
-        required: true
+        required: true,
+        unique: true
     },
     description: {
         type: mongoose.Schema.Types.String,

@@ -14,8 +14,7 @@ export default class CartWatch extends Component {
         let cart = JSON.parse(localStorage.getItem('cart'));
         let result = [];
 
-        cart = cart.filter(x => x.id != this.props.id);
-        console.log(this.props.id)
+        cart = cart.filter(x => x._id != this.props.id);
         localStorage.setItem('cart', JSON.stringify(cart));
         this.setState({isDeleted: true});
         toast.success('Successfully removed watch from cart!', {

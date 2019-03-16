@@ -21,7 +21,7 @@ class Home extends Component {
             }
         }).then((x) => x.json())
             .then((data) => {
-                console.log(data);
+                console.log(data.data);
                 this.setState({watches: data['data']});
                 this.setState({isLoading: false});
             }).catch(console.error);
@@ -32,15 +32,20 @@ class Home extends Component {
             return <h2 className="text-center mt-3">Loading...</h2>
         }
         let watches = [];
+        console.log(this.state.watches);
         (this.state.watches).forEach(el => {
-            watches.push(<Watch
-                id={el._id}
-                description={el.description}
-                name={el.name}
-                price={el.price}
-                imageUrl={el.imageUrl}
-            />);
+            if (el) {
+                watches.push(<Watch
+                    id={el._id}
+                    description={el.description}
+                    name={el.name}
+                    price={el.price}
+                    imageUrl={el.imageUrl}
+                />);
+            }
+
         })
+
         return (
             <main>
                 <div className="jumbotron w-75 mx-auto mt-3">

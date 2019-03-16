@@ -39,7 +39,7 @@ export default class DetailsPage extends Component {
     }
     addToCart = () => {
         let watch = {
-            id: this.state.watchId,
+            _id: this.state.watchId,
             name: this.state.name,
             description: this.state.description,
             price: this.state.price,
@@ -49,8 +49,8 @@ export default class DetailsPage extends Component {
         if (cart == null){
             cart = [];
         }
-        let ids = cart.map(x => x.id);
-        if (ids.includes(watch.id)){
+        let ids = cart.map(x => x._id);
+        if (ids.includes(watch._id)){
             toast.warn('Watch is already added to the cart!', {
                 position: toast.POSITION.TOP_RIGHT,
                 autoClose: 5000
@@ -66,7 +66,7 @@ export default class DetailsPage extends Component {
     };
     addToFavourite = () => {
         let watch = {
-            id: this.state.watchId,
+            _id: this.state.watchId,
             name: this.state.name,
             description: this.state.description,
             price: this.state.price,
@@ -86,7 +86,7 @@ export default class DetailsPage extends Component {
     };
     removeFromFavourite = () => {
         let watch = {
-            id: this.state.watchId,
+            _id: this.state.watchId,
             name: this.state.name,
             description: this.state.description,
             price: this.state.price,
@@ -96,7 +96,7 @@ export default class DetailsPage extends Component {
         if (favourite == null){
             favourite = [];
         }
-        favourite = favourite.filter(x => x.id != watch.id);
+        favourite = favourite.filter(x => x._id != watch._id);
 
         localStorage.setItem('favourite', JSON.stringify(favourite));
         this.setState({isInFavourites: false});
@@ -129,9 +129,9 @@ export default class DetailsPage extends Component {
                     price: +data.price,
                     imageUrl: data.imageUrl,
                     description: data.description,
-                    id: this.state.watchId
+                    _id: this.state.watchId
                 }
-                if (JSON.parse(localStorage.getItem('favourite')).filter(x => x.id == this.state.watchId).length != 0){
+                if (JSON.parse(localStorage.getItem('favourite')).filter(x => x._id == this.state.watchId).length != 0){
                     this.setState({isInFavourites: true});
                 }
             })

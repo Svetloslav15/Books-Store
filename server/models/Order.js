@@ -16,7 +16,8 @@ const orderSchema = new mongoose.Schema({
         required: true
     },
     date: {
-        type: mongoose.Schema.Types.Date
+        type: mongoose.Schema.Types.Date,
+        default: Date.now()
     },
     isArchived: {
         type:mongoose.Schema.Types.Boolean,

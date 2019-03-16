@@ -32,7 +32,7 @@ export default class Watch extends Component {
     }
     addToCart = () => {
         let watch = {
-            id: this.props.id,
+            _id: this.props.id,
             name: this.props.name,
             description: this.props.description,
             price: this.props.price,
@@ -42,8 +42,8 @@ export default class Watch extends Component {
         if (cart == null){
             cart = [];
         }
-        let ids = cart.map(x => x.id);
-        if (ids.includes(watch.id)){
+        let ids = cart.map(x => x._id);
+        if (ids.includes(watch._id)){
             toast.warn('Watch is already added to the cart!', {
                 position: toast.POSITION.TOP_RIGHT,
                 autoClose: 5000

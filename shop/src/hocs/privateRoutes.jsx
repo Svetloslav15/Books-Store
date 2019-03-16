@@ -19,7 +19,22 @@ function protectedRoute(allowedRoles, inRole) {
     };
 
 }
+function authedRoute(allowedRoles, inRole) {
+    return function (WrappedComponent) {
+        return function ({role, ...rest}) {
+            if (inRole()) {
+                return <WrappedComponent {...rest} />;
+            }
+            toast.warn('You can\'t access this route!', {
+                position: toast.POSITION.TOP_RIGHT,
+                autoClose: 5000
+            });
+            return <Redirect to="/login"/>
+        };
 
+    };
+
+}
 function isAdmin() {
     let roles = localStorage.getItem('roles');
     if (!roles) {
@@ -44,5 +59,5 @@ function isNotAuthed(Component) {
 }
 
 export {
-    isAuthed, isNotAuthed, protectedRoute, isAdmin
+    isAuthed, isNotAuthed, protectedRoute, isAdmin, authedRoute
 }

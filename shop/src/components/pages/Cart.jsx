@@ -11,7 +11,8 @@ export default class Cart extends Component {
 
         this.state = {
             watches: [],
-            allPrice: 0
+            allPrice: 0,
+            isCheckout: false
         }
     }
 
@@ -25,8 +26,34 @@ export default class Cart extends Component {
         }
 
         this.setState({allPrice});
-    }
+    };
+    checkout = () => {
+        let cart = JSON.parse(localStorage.getItem('cart'));
+        fetch('http://localhost:5000/orders/create', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                watches: cart,
+                price: this.state.allPrice,
+                userId: localStorage.getItem('userId')
+            })
+        }).then(x => x.json())
+            .then((data) => {
+                localStorage.removeItem('cart');
+                this.setState({isCheckout: true});
+                toast.success(data.message, {
+                    position: toast.POSITION.TOP_RIGHT,
+                    autoClose: 5000
+                });
+            });
+    };
+
     render = () => {
+        if (this.state.isCheckout){
+            return <Redirect to="/cart"/>;
+        }
         let watches = [];
         let cart = JSON.parse(localStorage.getItem('cart'));
         if (cart == null || cart.length == 0) {
@@ -34,7 +61,7 @@ export default class Cart extends Component {
         }
         cart.forEach(el => {
             watches.push(<CartWatch
-                id={el.id}
+                id={el._id}
                 description={el.description}
                 name={el.name}
                 price={el.price}
@@ -67,7 +94,7 @@ export default class Cart extends Component {
                         <td colspan="2" class="hidden-xs"></td>
                         <td class="hidden-xs text-center"><strong>Total: ${this.state.allPrice}</strong></td>
                         <td>
-                            <button class="btn btn-outline-success btn-block">
+                            <button onClick={this.checkout} class="btn btn-outline-success btn-block">
                                 Checkout
                                 <i class="fa fa-angle-right"></i>
                             </button>

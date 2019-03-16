@@ -20,7 +20,7 @@ module.exports = {
         try{
             let id = req.params.id;
             let user = await User.findById(id);
-            user.roles = user.roles.push('Admin');
+            user.roles.push('Admin');
             user.save();
             res.status(200).json({
                 message: "Successfully made the user an Admin!"
@@ -36,7 +36,7 @@ module.exports = {
         try{
             let id = req.params.id;
             let user = await User.findById(id);
-            user.roles = user.roles.filter(x => x != 'Admin');
+            user.roles.filter(x => x != 'Admin');
             user.save();
             res.status(200).json({
                 message: "Successfully made the user an Admin!"

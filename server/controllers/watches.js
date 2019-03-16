@@ -16,6 +16,7 @@ module.exports = {
         Watch.create({
             description, imageUrl, price: Number(price), name
         }).then((x) => {
+            console.log('work');
             res.status(200).json({
                 message: 'Watch was created successfully!',
                 data: x,
@@ -23,7 +24,7 @@ module.exports = {
             });
         }).catch((err) => {
             res.status(422).json({
-                message: err,
+                message: 'Invalid data!',
                 success: false
             });
         });
@@ -172,8 +173,10 @@ module.exports = {
         Watch.find({}).sort('-date')
             .then((watches) => {
                 let result = [];
-                for (let i = 1; i <= 3; i++) {
-                    result.push(watches[i]);
+                for (let i = 0; i < 3; i++) {
+                    if (watches[i] != null){
+                        result.push(watches[i]);
+                    }
                 }
                 res.status(200).json({
                     data: result,

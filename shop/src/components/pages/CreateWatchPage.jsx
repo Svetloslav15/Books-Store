@@ -25,7 +25,6 @@ export default class CreateWatchPage extends Component{
     handleSubmit = (event) => {
         event.preventDefault();
         let data = this.state;
-        console.log(data);
         fetch('http://localhost:5000/watches/create', {
             method: 'POST',
             headers: {
@@ -39,6 +38,7 @@ export default class CreateWatchPage extends Component{
             })
         }).then((x) => x.json())
             .then((data) => {
+                console.log(data);
                 if (!data.success){
                     toast.error(data.message, {
                         position: toast.POSITION.TOP_RIGHT,

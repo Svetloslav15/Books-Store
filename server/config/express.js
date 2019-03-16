@@ -1,4 +1,5 @@
 const bodyParser = require('body-parser');
+const session = require('express-session');
 let env = process.env.NODE_ENV || 'development';
 let settings = require('./settings')[env];
 
@@ -10,7 +11,7 @@ module.exports = (app) => {
         res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
         next();
     });
-
+    app.use(session({secret: 'topSecretPass123'}));
 // General error handling
     app.use((error, req, res, next) => {
         const status = error.statusCode || 500;

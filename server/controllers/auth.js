@@ -51,7 +51,7 @@ module.exports = {
                     username: user.username,
                     userId: user._id.toString()
                 }, 'somesupersecret', {expiresIn: '4h'});
-
+                req.session.userId = user._id.toString();
                 res.status(200).json(
                     {
                         message: 'User registered successfully!',
@@ -104,7 +104,7 @@ module.exports = {
                     username: user.username,
                     userId: user._id.toString()
                 }, 'somesupersecret', {expiresIn: '4h'});
-
+                req.session.userId = user._id.toString();
                 res.status(200).json(
                     {
                         message: 'User successfully logged in!',

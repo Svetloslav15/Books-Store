@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import {Link, Redirect} from "react-router-dom";
 import {toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,7 +12,7 @@ export default class FavouriteWatchWatch extends Component {
     }
     removeFromFavourite = () => {
         let cart = JSON.parse(localStorage.getItem('favourite'));
-        cart = cart.filter(x => x.id != this.props.id);
+        cart = cart.filter(x => x._id !== this.props.id);
         localStorage.setItem('favourite', JSON.stringify(cart));
         this.setState({isDeleted: true});
         toast.success('Successfully removed watch from favourite!', {
