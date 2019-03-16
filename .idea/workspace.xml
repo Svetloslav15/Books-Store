@@ -2,38 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e4838be-0b7f-4b1f-9cad-aa236fc88498" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/routes/admin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/common/Order.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/common/User.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/pages/ArchivedOrders.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/pages/MyOrders.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/pages/PendingOrders.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop/src/components/pages/Users.jsx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/server/config/express.js" afterPath="$PROJECT_DIR$/server/config/express.js" />
-      <change beforePath="$PROJECT_DIR$/server/config/routes.js" afterPath="$PROJECT_DIR$/server/config/routes.js" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/admin.js" afterPath="$PROJECT_DIR$/server/controllers/admin.js" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" afterPath="$PROJECT_DIR$/server/controllers/auth.js" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/index.js" afterPath="$PROJECT_DIR$/server/controllers/index.js" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/orders.js" afterPath="$PROJECT_DIR$/server/controllers/orders.js" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/watches.js" afterPath="$PROJECT_DIR$/server/controllers/watches.js" />
-      <change beforePath="$PROJECT_DIR$/server/models/Order.js" afterPath="$PROJECT_DIR$/server/models/Order.js" />
-      <change beforePath="$PROJECT_DIR$/server/models/Watch.js" afterPath="$PROJECT_DIR$/server/models/Watch.js" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" afterPath="$PROJECT_DIR$/server/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" afterPath="$PROJECT_DIR$/server/package.json" />
-      <change beforePath="$PROJECT_DIR$/shop/src/App.js" afterPath="$PROJECT_DIR$/shop/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/shop/src/components/common/CartWatch.jsx" afterPath="$PROJECT_DIR$/shop/src/components/common/CartWatch.jsx" />
-      <change beforePath="$PROJECT_DIR$/shop/src/components/common/FavouriteWatch.jsx" afterPath="$PROJECT_DIR$/shop/src/components/common/FavouriteWatch.jsx" />
-      <change beforePath="$PROJECT_DIR$/shop/src/components/common/Favourites.jsx" afterPath="$PROJECT_DIR$/shop/src/components/common/Favourites.jsx" />
-      <change beforePath="$PROJECT_DIR$/shop/src/components/common/Watch.jsx" afterPath="$PROJECT_DIR$/shop/src/components/common/Watch.jsx" />
-      <change beforePath="$PROJECT_DIR$/shop/src/components/pages/Cart.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/Cart.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/package-lock.json" afterPath="$PROJECT_DIR$/shop/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/shop/package.json" afterPath="$PROJECT_DIR$/shop/package.json" />
+      <change beforePath="$PROJECT_DIR$/shop/public/index.html" afterPath="$PROJECT_DIR$/shop/public/index.html" />
       <change beforePath="$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx" />
-      <change beforePath="$PROJECT_DIR$/shop/src/components/pages/DetailsPage.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/DetailsPage.jsx" />
-      <change beforePath="$PROJECT_DIR$/shop/src/components/pages/Home.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/Home.jsx" />
-      <change beforePath="$PROJECT_DIR$/shop/src/hocs/privateRoutes.jsx" afterPath="$PROJECT_DIR$/shop/src/hocs/privateRoutes.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -67,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PendingOrders.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/components/pages/PendingOrders.jsx">
+      <file leaf-file-name="AdminOrder.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="46" column="9" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="56" column="55" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="55" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -79,21 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminOrder.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx">
+      <file leaf-file-name="OrderDetails.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1207">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+              <folding>
+                <element signature="e#416#1079#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderDetails.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="119">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,18 +91,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArchivedOrders.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/components/pages/ArchivedOrders.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -143,6 +107,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -161,10 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/watch-shop/package.json" />
-        <option value="$PROJECT_DIR$/watch-shop/src/index.js" />
-        <option value="$PROJECT_DIR$/shop/src/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/shop/public/index.html" />
         <option value="$PROJECT_DIR$/shop/src/index.js" />
         <option value="$PROJECT_DIR$/shop/src/components/Navigation.jsx" />
         <option value="$PROJECT_DIR$/server/models/User.js" />
@@ -195,13 +156,11 @@
         <option value="$PROJECT_DIR$/shop/src/components/common/Favourites.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx" />
         <option value="$PROJECT_DIR$/server/models/Watch.js" />
-        <option value="$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx" />
         <option value="$PROJECT_DIR$/server/controllers/watches.js" />
         <option value="$PROJECT_DIR$/shop/src/components/common/Order.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/MyOrders.jsx" />
         <option value="$PROJECT_DIR$/server/controllers/index.js" />
         <option value="$PROJECT_DIR$/shop/src/App.js" />
-        <option value="$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx" />
         <option value="$PROJECT_DIR$/server/config/routes.js" />
         <option value="$PROJECT_DIR$/shop/src/components/common/User.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/Users.jsx" />
@@ -209,9 +168,15 @@
         <option value="$PROJECT_DIR$/server/controllers/admin.js" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/PendingOrders.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/ArchivedOrders.jsx" />
-        <option value="$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx" />
         <option value="$PROJECT_DIR$/server/controllers/orders.js" />
         <option value="$PROJECT_DIR$/server/routes/order.js" />
+        <option value="$PROJECT_DIR$/public/dropzone.css" />
+        <option value="$PROJECT_DIR$/shop/src/imgur.js" />
+        <option value="$PROJECT_DIR$/shop/src/upload.js" />
+        <option value="$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx" />
+        <option value="$PROJECT_DIR$/shop/public/index.html" />
+        <option value="$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx" />
+        <option value="$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx" />
       </list>
     </option>
   </component>
@@ -283,65 +248,24 @@
             <path>
               <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -362,6 +286,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Watch-Shop\shop\src" />
       <recent name="D:\Watch-Shop\shop\src\components\common" />
       <recent name="D:\Watch-Shop\watch-shop\src" />
     </key>
@@ -405,12 +330,12 @@
       <workItem from="1552486032134" duration="8421000" />
       <workItem from="1552501690766" duration="16663000" />
       <workItem from="1552579670388" duration="7750000" />
-      <workItem from="1552735322477" duration="16196000" />
+      <workItem from="1552735322477" duration="21941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78810000" />
+    <option name="totallyTimeSpent" value="84555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -421,9 +346,9 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35789475" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35789475" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20350876" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4385965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -466,41 +391,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/Register.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/Logout.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/create-watch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="46" column="11" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/Details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
@@ -704,14 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="63" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/Watch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -755,7 +637,7 @@
         <state relative-caret-position="204">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
             <element signature="e#744#1499#0" expanded="false" />
           </folding>
         </state>
@@ -814,7 +696,7 @@
         <state relative-caret-position="102">
           <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -824,7 +706,7 @@
         <state relative-caret-position="198">
           <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -853,7 +735,7 @@
         <state relative-caret-position="-153">
           <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -863,24 +745,8 @@
         <state relative-caret-position="640">
           <caret line="46" column="9" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="46" selection-end-column="9" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1207">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,11 +790,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/imgur.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="165" column="4" lean-forward="false" selection-start-line="165" selection-start-column="4" selection-end-line="165" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/dropzone.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="83" column="1" lean-forward="false" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="82" column="67" lean-forward="true" selection-start-line="82" selection-start-column="67" selection-end-line="82" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="56" column="55" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding>
+            <element signature="e#416#1079#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
