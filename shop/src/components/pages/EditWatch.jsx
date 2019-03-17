@@ -14,7 +14,6 @@ export default class EditWatch extends Component{
             imageUrl: '',
             description: "",
             id: this.props.match.params.id,
-            isRedirected: false
         }
     }
     handleChange = (event) => {
@@ -72,18 +71,14 @@ export default class EditWatch extends Component{
                     position: toast.POSITION.TOP_RIGHT,
                     autoClose: 5000
                 });
-                this.setState({
-                    isRedirected: true
-                })
+
             })
             .catch(err => {
                 console.log(err);
             })
     }
     render(){
-        if (this.state.isRedirected){
-            return <Redirect to="/administration/watch/add"/>
-        }
+
         return(
             <main>
                 <section class="jumbotron text-dark text-center m-4">

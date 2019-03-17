@@ -29,7 +29,18 @@ export default class DetailsPage extends Component {
             })
         }).then(x => x.json())
             .then((data) => {
-                console.log(data);
+                let favourite = JSON.parse(localStorage.getItem('favourite'));
+                if (favourite){
+                    favourite = favourite.filter(x => x._id != this.state.watchId);
+                    localStorage.setItem('favourite', JSON.stringify(favourite));
+                }
+
+                let cart = JSON.parse(localStorage.getItem('cart'));
+                if (cart){
+                    cart = cart.filter(x => x._id != this.state.watchId);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                }
+
                 this.setState({isDeleted: true});
                 toast.success(data.message, {
                     position: toast.POSITION.TOP_RIGHT,

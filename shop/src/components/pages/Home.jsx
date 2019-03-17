@@ -62,7 +62,6 @@ class Home extends Component {
                     </p>
                 </div>
                 <div className="row text-center mx-auto">
-                    <h3 className="my-3 text-center col-lg-12">Newest Watches!</h3>
                     <div className="card-deck justify-content-center">
                         {
                             watches

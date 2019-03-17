@@ -21,6 +21,10 @@ const watchSchema = new mongoose.Schema({
     date: {
         type: Date,
         default: Date.now()
+    },
+    isDeleted: {
+        type: mongoose.Schema.Types.Boolean,
+        default: false
     }
 });
 

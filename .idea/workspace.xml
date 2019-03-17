@@ -3,11 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9e4838be-0b7f-4b1f-9cad-aa236fc88498" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/admin.js" afterPath="$PROJECT_DIR$/server/controllers/admin.js" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/watches.js" afterPath="$PROJECT_DIR$/server/controllers/watches.js" />
+      <change beforePath="$PROJECT_DIR$/server/models/Watch.js" afterPath="$PROJECT_DIR$/server/models/Watch.js" />
       <change beforePath="$PROJECT_DIR$/shop/package-lock.json" afterPath="$PROJECT_DIR$/shop/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/shop/package.json" afterPath="$PROJECT_DIR$/shop/package.json" />
-      <change beforePath="$PROJECT_DIR$/shop/public/index.html" afterPath="$PROJECT_DIR$/shop/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx" afterPath="$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/src/components/common/Watch.jsx" afterPath="$PROJECT_DIR$/shop/src/components/common/Watch.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/src/components/pages/DetailsPage.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/DetailsPage.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/src/components/pages/EditWatch.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/EditWatch.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/src/components/pages/Home.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/Home.jsx" />
       <change beforePath="$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx" afterPath="$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/src/hocs/privateRoutes.jsx" afterPath="$PROJECT_DIR$/shop/src/hocs/privateRoutes.jsx" />
+      <change beforePath="$PROJECT_DIR$/shop/src/index.css" afterPath="$PROJECT_DIR$/shop/src/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,78 +32,75 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="68">
+              <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/order.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminOrder.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/admin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="56" column="55" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="55" />
+              <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#205#557#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderDetails.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Watch.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/src/components/common/Watch.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="78" column="68" lean-forward="false" selection-start-line="78" selection-start-column="68" selection-end-line="78" selection-end-column="68" />
+              <folding>
+                <element signature="e#1568#2436#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderDetails.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+            <state relative-caret-position="580">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
-                <element signature="e#416#1079#0" expanded="false" />
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#444#1107#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/public/index.html">
+      <file leaf-file-name="OrderWatch.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orders.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controllers/orders.js">
+      <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shop/src/components/pages/Home.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
-              <folding>
-                <element signature="e#200#672#0" expanded="false" />
-                <element signature="e#705#1240#0" expanded="false" />
-                <element signature="e#2421#2914#0" expanded="false" />
-                <element signature="e#2953#3400#0" expanded="false" />
-                <element signature="e#3440#3890#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="98">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/App.js">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-561">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="302">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -141,22 +146,13 @@
         <option value="$PROJECT_DIR$/public/shop.html" />
         <option value="$PROJECT_DIR$/server/routes/watches.js" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/Shop.jsx" />
-        <option value="$PROJECT_DIR$/shop/src/index.css" />
-        <option value="$PROJECT_DIR$/shop/src/components/pages/EditWatch.jsx" />
-        <option value="$PROJECT_DIR$/shop/src/hocs/privateRoutes.jsx" />
         <option value="$PROJECT_DIR$/server/models/Order.js" />
-        <option value="$PROJECT_DIR$/shop/src/components/pages/DetailsPage.jsx" />
-        <option value="$PROJECT_DIR$/shop/src/components/common/Watch.jsx" />
         <option value="$PROJECT_DIR$/server/config/express.js" />
         <option value="$PROJECT_DIR$/server/controllers/auth.js" />
-        <option value="$PROJECT_DIR$/shop/src/components/pages/Home.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/Cart.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/common/CartWatch.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/common/FavouriteWatch.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/common/Favourites.jsx" />
-        <option value="$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx" />
-        <option value="$PROJECT_DIR$/server/models/Watch.js" />
-        <option value="$PROJECT_DIR$/server/controllers/watches.js" />
         <option value="$PROJECT_DIR$/shop/src/components/common/Order.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/MyOrders.jsx" />
         <option value="$PROJECT_DIR$/server/controllers/index.js" />
@@ -165,7 +161,6 @@
         <option value="$PROJECT_DIR$/shop/src/components/common/User.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/Users.jsx" />
         <option value="$PROJECT_DIR$/server/routes/admin.js" />
-        <option value="$PROJECT_DIR$/server/controllers/admin.js" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/PendingOrders.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/ArchivedOrders.jsx" />
         <option value="$PROJECT_DIR$/server/controllers/orders.js" />
@@ -176,7 +171,17 @@
         <option value="$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx" />
         <option value="$PROJECT_DIR$/shop/public/index.html" />
         <option value="$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx" />
+        <option value="$PROJECT_DIR$/server/models/Watch.js" />
+        <option value="$PROJECT_DIR$/server/controllers/watches.js" />
+        <option value="$PROJECT_DIR$/server/controllers/admin.js" />
+        <option value="$PROJECT_DIR$/shop/src/hocs/privateRoutes.jsx" />
         <option value="$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx" />
+        <option value="$PROJECT_DIR$/shop/src/components/pages/DetailsPage.jsx" />
+        <option value="$PROJECT_DIR$/shop/src/components/pages/EditWatch.jsx" />
+        <option value="$PROJECT_DIR$/shop/src/index.css" />
+        <option value="$PROJECT_DIR$/shop/src/components/common/Watch.jsx" />
+        <option value="$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx" />
+        <option value="$PROJECT_DIR$/shop/src/components/pages/Home.jsx" />
       </list>
     </option>
   </component>
@@ -238,6 +243,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,18 +254,7 @@
             <path>
               <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
@@ -267,11 +262,25 @@
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watch-Shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watch-Shop" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,11 +340,12 @@
       <workItem from="1552501690766" duration="16663000" />
       <workItem from="1552579670388" duration="7750000" />
       <workItem from="1552735322477" duration="21941000" />
+      <workItem from="1552811830263" duration="7037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84555000" />
+    <option name="totallyTimeSpent" value="91592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -348,7 +358,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35789475" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4385965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20526315" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -371,18 +381,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/watches.js</url>
-          <line>86</line>
+          <line>87</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/shop/src/components/common/Watch.jsx</url>
-          <line>60</line>
+          <line>72</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/orders.js</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
@@ -391,14 +400,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/Details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -447,29 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/common/Navigation.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/hocs/privateRoutes.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="61" column="63" lean-forward="false" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/watches.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -482,7 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -490,7 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -508,7 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -532,26 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/common/Watch.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#432#1032#0" expanded="false" />
-            <element signature="e#1055#1923#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/Home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,62 +528,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/DetailsPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
-          <folding>
-            <element signature="e#578#1188#0" expanded="false" />
-            <element signature="e#2109#2794#0" expanded="false" />
-            <element signature="e#2828#3551#0" expanded="false" />
-            <element signature="e#4873#7496#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop/src/components/common/CartWatch.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/Watch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/watches.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="e#199#1039#0" expanded="false" />
-            <element signature="e#1073#1373#0" expanded="false" />
-            <element signature="e#1404#2296#0" expanded="false" />
-            <element signature="e#2329#2704#0" expanded="false" />
-            <element signature="e#2746#3258#0" expanded="false" />
-            <element signature="e#3300#3720#0" expanded="false" />
-            <element signature="e#3748#4089#0" expanded="false" />
-            <element signature="e#4136#4687#0" expanded="false" />
-            <element signature="e#4728#5183#0" expanded="false" />
-            <element signature="e#5217#5786#0" expanded="false" />
-            <element signature="e#5818#6365#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/EditWatch.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="34" />
-          <folding>
-            <element signature="e#641#1286#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,14 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="22" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -764,19 +658,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-          <folding>
-            <element signature="e#205#557#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
+        <state relative-caret-position="153">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
@@ -790,30 +674,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/imgur.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="165" column="4" lean-forward="false" selection-start-line="165" selection-start-column="4" selection-end-line="165" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/dropzone.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="83" column="1" lean-forward="false" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/imgur.js" />
+    <entry file="file://$PROJECT_DIR$/shop/src/upload.js" />
+    <entry file="file://$PROJECT_DIR$/shop/src/dropzone.css" />
     <entry file="file://$PROJECT_DIR$/shop/src/components/pages/CreateWatchPage.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -824,11 +687,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.js">
+    <entry file="file://$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="901">
+          <caret line="56" column="55" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -840,23 +705,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/components/common/AdminOrder.jsx">
+    <entry file="file://$PROJECT_DIR$/server/models/Watch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/watches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="76" column="10" lean-forward="false" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+          <folding>
+            <element signature="e#199#1039#0" expanded="false" />
+            <element signature="e#1073#1373#0" expanded="false" />
+            <element signature="e#1404#2296#0" expanded="false" />
+            <element signature="e#2782#3294#0" expanded="false" />
+            <element signature="e#3336#3756#0" expanded="false" />
+            <element signature="e#3784#4143#0" expanded="false" />
+            <element signature="e#4190#4741#0" expanded="false" />
+            <element signature="e#4782#5237#0" expanded="false" />
+            <element signature="e#5888#6435#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/hocs/privateRoutes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/common/Navigation.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/Logout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="56" column="55" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="55" />
+          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#205#557#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/DetailsPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+          <folding>
+            <element signature="e#1733#2602#0" expanded="false" />
+            <element signature="e#2631#3316#0" expanded="false" />
+            <element signature="e#3350#4073#0" expanded="false" />
+            <element signature="e#4099#5262#0" expanded="false" />
+            <element signature="e#5395#8018#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/EditWatch.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#609#1254#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/common/Watch.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="78" column="68" lean-forward="false" selection-start-line="78" selection-start-column="68" selection-end-line="78" selection-end-column="68" />
+          <folding>
+            <element signature="e#1568#2436#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop/src/components/pages/OrderDetails.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+        <state relative-caret-position="580">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
-            <element signature="e#416#1079#0" expanded="false" />
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#444#1107#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/common/OrderWatch.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/components/pages/Home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

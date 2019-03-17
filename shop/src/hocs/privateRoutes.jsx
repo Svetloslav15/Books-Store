@@ -46,16 +46,10 @@ function isAdmin() {
 
 function isAuthed(Component) {
     return localStorage.getItem('token');
-    //return <Redirect to="/login"/>
 }
 
 function isNotAuthed(Component) {
     return !localStorage.getItem('token');
-    //toast.warn('You must be not authenticated to access this route!', {
-    //    position: toast.POSITION.TOP_RIGHT,
-    //    autoClose: 5000
-    //});
-    //return <Redirect to="/"/>
 }
 
 export {

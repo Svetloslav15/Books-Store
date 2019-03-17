@@ -34,3 +34,6 @@
 .cart-btn{
   display: flex; flex-direction: row
 }
+.image-watch{
+  width: 2em;
+}

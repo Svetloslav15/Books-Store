@@ -11,7 +11,7 @@ export default class OrderWatch extends Component {
                 <div class="col-lg-10 row justify-content-center">
                     <img
                         src={this.props.imageUrl}
-                        alt="..." class="cart-image mx-3  img-cart w-25"/>
+                        alt="..." class="cart-image mx-3  img-cart"/>
                     <div class="col-lg-5 mt-3">
                         <h4>{this.props.name}</h4>
                     </div>

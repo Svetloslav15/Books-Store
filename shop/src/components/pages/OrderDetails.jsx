@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import OrderWatch from "../common/OrderWatch";
+import jsPDF from 'jspdf';
+
 export default class OrderDetails extends Component {
     constructor(props) {
         super(props);
@@ -49,7 +51,7 @@ export default class OrderDetails extends Component {
 
         return (
             <main className="container">
-                <div id='order-container'>
+                <div  id='order-container'>
                     <div className="col-lg-12 my-2 ">
                         <h3>Costumer: {this.state.username}</h3>
                         <h3>All Price: ${this.state.allPrice}</h3>
@@ -67,7 +69,7 @@ export default class OrderDetails extends Component {
                             }
                         </div>
                     </div>
-                </div>
+                </div >
             </main>
         )
     }

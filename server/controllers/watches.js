@@ -72,8 +72,9 @@ module.exports = {
     },
     deleteWatch: (req, res) => {
         let id = req.body.id;
-        Watch.findByIdAndRemove(id)
-            .then(watch => {
+        Watch.findByIdAndUpdate(id, {
+            $set: {isDeleted: true}
+        }).then(watch => {
                 res.status(200).json({
                     data: watch,
                     message: "Successfully deleted watch!"
@@ -121,7 +122,7 @@ module.exports = {
         }
     },
     getAll: (req, res) => {
-        Watch.find()
+        Watch.find({isDeleted: false})
             .then((watches) => {
                 res.status(200).json({
                     data: watches,
@@ -170,7 +171,7 @@ module.exports = {
         }
     },
     getBestThree: (req, res) => {
-        Watch.find({}).sort('-date')
+        Watch.find({isDeleted: false}).sort('-date')
             .then((watches) => {
                 let result = [];
                 for (let i = 0; i < 3; i++) {
