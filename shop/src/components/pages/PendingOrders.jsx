@@ -17,7 +17,8 @@ export default class PendingOrders extends Component {
         fetch('http://localhost:5000/orders/get/pending', {
             method: "GET",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         }).then(x => x.json())
             .then((data) => {

@@ -22,7 +22,8 @@ export default class DetailsPage extends Component {
         fetch('http://localhost:5000/watches/delete/' + this.state.watchId, {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
             body: JSON.stringify({
                 id: this.state.watchId
@@ -124,7 +125,8 @@ export default class DetailsPage extends Component {
         fetch('http://localhost:5000/watches/get/' + id, {
             method: 'GET',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         }).then((x) => x.json())
             .then((data) => {

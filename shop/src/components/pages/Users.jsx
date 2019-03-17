@@ -16,7 +16,8 @@ export default class Users extends Component {
         fetch('http://localhost:5000/admin/get/all', {
             method: "GET",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         }).then(x => x.json())
             .then((data) => {

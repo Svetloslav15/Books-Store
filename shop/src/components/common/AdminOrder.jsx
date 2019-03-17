@@ -15,7 +15,8 @@ export default class AdminOrder extends Component {
         fetch('http://localhost:5000/orders/pend/' + this.props.id, {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             }
         }).then((x) => x.json())
             .then((data) => {
@@ -35,7 +36,8 @@ export default class AdminOrder extends Component {
         fetch('http://localhost:5000/orders/archive/' + this.props.id, {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             }
         }).then((x) => x.json())
             .then((data) => {

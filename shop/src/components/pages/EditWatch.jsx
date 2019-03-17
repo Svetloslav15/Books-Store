@@ -29,7 +29,8 @@ export default class EditWatch extends Component{
         fetch('http://localhost:5000/watches/get/' + id, {
             method: 'GET',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         }).then((x) => x.json())
             .then((data) => {
@@ -48,7 +49,8 @@ export default class EditWatch extends Component{
         fetch('http://localhost:5000/watches/edit/' + this.state.id, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
             body: JSON.stringify({
                 id: data.id,

@@ -15,7 +15,8 @@ export default class Watch extends Component {
         fetch('http://localhost:5000/watches/delete/' + this.props.id, {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
             body: JSON.stringify({
                 id: this.props.id

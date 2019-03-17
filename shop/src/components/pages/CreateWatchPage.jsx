@@ -29,7 +29,8 @@ export default class CreateWatchPage extends Component{
         fetch('http://localhost:5000/watches/create', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
             body: JSON.stringify({
                 name: data.name,

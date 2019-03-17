@@ -16,7 +16,8 @@ export default class ArchivedOrders extends Component {
         fetch('http://localhost:5000/orders/get/archived', {
             method: "GET",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         }).then(x => x.json())
             .then((data) => {

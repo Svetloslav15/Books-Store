@@ -24,7 +24,8 @@ export default class OrderDetails extends Component {
         fetch('http://localhost:5000/orders/get/' + id, {
             method: 'GET',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         }).then((x) => x.json())
             .then((data) => {
