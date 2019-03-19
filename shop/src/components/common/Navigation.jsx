@@ -15,28 +15,28 @@ export default class Navigation extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarColor01">
+                    <div className="collapse navbar-collapse">
                         <ul className="navbar-nav mx-auto mt-3">
-                            <li className="nav-item">
-                                <Link className="nav-link mx-5" to="/">Home</Link>
+                            <li className="nav-item mx-5">
+                                <Link className="nav-link" to="/">Home</Link>
                             </li>
                             <li className="nav-item mx-5">
                                 <Link className="nav-link" to="/shop">Shop</Link>
                             </li>
                             {
                                 localStorage.getItem('token') != undefined ?
-                                    (<ul className="navbar-nav mx-auto">
+                                    (<Fragment>
                                         <li className="nav-item mx-5">
                                             <Link className="nav-link" to="/orders/mine">My Orders</Link>
                                         </li>
                                         {
                                             isAdmin() == true ? (<li className="nav-item dropdown">
-                                                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown"
+                                                <div className="nav-link dropdown-toggle cp" id="navbarDropdown"
                                                       role="button"
                                                       data-toggle="dropdown"
                                                       aria-haspopup="true" aria-expanded="false">
                                                     Administration
-                                                </Link>
+                                                </div>
                                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                                     <Link className="dropdown-item" to="/administration/watch/add">Add
                                                         Watch</Link>
@@ -47,7 +47,7 @@ export default class Navigation extends Component {
                                                     <Link className="dropdown-item" to="/administration/users/all">Get All
                                                         Users</Link>
                                                 </div>
-                                            </li>) : ""
+                                            </li>) : <Fragment></Fragment>
                                         }
                                         <div className="row justify-content-center">
                                             <li className="nav-item ml-5">
@@ -66,16 +66,16 @@ export default class Navigation extends Component {
                                         <li className="nav-item font-2em ml-2">
                                             <Link className="nav-link" to="/logout"><i class="fas fa-sign-out-alt"></i></Link>
                                         </li>
-                                    </ul>) :
+                                    </Fragment>) :
                                     (
-                                        <ul className="navbar-nav mx-auto">
+                                        <Fragment>
                                             <li className="nav-item mx-5">
                                                 <Link className="nav-link" to="/register">Register</Link>
                                             </li>
                                             <li className="nav-item mx-5">
                                                 <Link className="nav-link" to="/login">Login</Link>
                                             </li>
-                                        </ul>
+                                        </Fragment>
                                     )
                             }
                         </ul>

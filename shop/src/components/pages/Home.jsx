@@ -56,7 +56,7 @@ class Home extends Component {
                             localStorage.getItem('token') ?
                                 <Link className="btn btn-outline-info btn-lg ml-2 w-7em" to="/shop"
                                       role="button">Shop</Link> :
-                                <Link className="btn btn-outline-info btn-lg w-7em" to="/login"
+                                <Link className="btn btn-outline-info btn-lg w-7em" to="/Register"
                                       role="button">Register</Link>
                         }
                     </p>

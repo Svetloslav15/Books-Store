@@ -40,7 +40,8 @@ export default class User extends Component {
         fetch('http://localhost:5000/admin/remove/' + this.props.id, {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         }).then(x => x.json())
             .then((data) => {

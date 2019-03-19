@@ -8,13 +8,13 @@ class Shop extends Component {
 
         this.state = {
             watches: [],
-            isLoading: false
+            isLoading: false,
+            currentPage: 1
         };
     }
-
-    componentWillMount = () => {
+    componentDidMount = () => {
         this.setState({isLoading: true});
-        fetch('http://localhost:5000/watches/get/all', {
+        fetch('http://localhost:5000/watches/get/all?page=' + this.state.currentPage, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json'

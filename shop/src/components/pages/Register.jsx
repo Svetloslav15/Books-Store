@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 export default class Navigation extends Component {
     constructor(props) {
@@ -100,6 +100,10 @@ export default class Navigation extends Component {
                         <div class="d-block m-auto">
                             <button type="submit" class="btn btn-outline-info p-md-3 mt-5 text-uppercase h5">Submit
                             </button>
+                        </div>
+                        <div className="d-block m-auto">
+                            Already have an account? <Link className="btn btn-outline-info btn-lg" to="/login"
+                                                         role="button">Login</Link>
                         </div>
                     </form>
                 </section>
